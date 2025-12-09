@@ -1,14 +1,24 @@
 services:
   latex-builder:
-    build:
-      context: ..
-      dockerfile: ../Dockerfile
-      args:
-        TEX_FILE: test.tex
-        BUILD_FORMAT: pdf
+    image: basemax/latex-builder:latest
     container_name: latex-builder
     volumes:
       - ./:/work
     environment:
       TEX_FILE: test.tex
       BUILD_FORMAT: pdf
+
+# services:
+#   latex-builder:
+#     build:
+#       context: ..
+#       dockerfile: ../Dockerfile
+#       args:
+#         TEX_FILE: test.tex
+#         BUILD_FORMAT: pdf
+#     container_name: latex-builder
+#     volumes:
+#       - ./:/work
+#     environment:
+#       TEX_FILE: test.tex
+#       BUILD_FORMAT: pdf
