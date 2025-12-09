@@ -1,0 +1,27 @@
+\documentclass[12pt]{article}
+
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\usepackage{lipsum}
+
+\title{Test Document}
+\author{BaseMax}
+\date{2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+This is a minimal LaTeX test document for verifying the Docker LaTeX builder.
+It demonstrates that the environment correctly compiles PDF output using
+\texttt{latexmk} and \texttt{texlive} inside Docker.
+
+\section{Sample Text}
+\lipsum[1]
+
+\section{Conclusion}
+If you are reading this PDF, your Docker LaTeX builder is working successfully.
+
+\end{document}
