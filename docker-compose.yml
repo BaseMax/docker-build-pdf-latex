@@ -1,6 +1,0 @@
-services:
-  latex-builder:
-    build: .
-    container_name: latex-builder
-    volumes:
-      - ./:/data
